@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>lvl3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="bOdy">
+
+    <div id="menuDiv">
+
+<!-----------------------------ГОЛОВНЕ МЕНЮ------------------------------>
+        <div id="menuBox">
+            <form name="menuForm">
+                <input type="button" value="Edit" id="btnEdit">
+                <input type="button" value="B" id="btnB">
+                <input type="button" value="I" id="btnI">
+                <input type="button" value="U" id="btnU">
+                <select name="txtSize" id="txtSize">
+                    <option value="7pt">7pt</option>
+                    <option value="8pt">8pt</option>
+                    <option value="9pt">9pt</option>
+                    <option value="10pt">10pt</option>
+                    <option value="11pt">11pt</option>
+                    <option value="12pt" selected>12pt</option>
+                    <option value="14pt">14pt</option>
+                    <option value="16pt">16pt</option>
+                    <option value="18pt">18pt</option>
+                    <option value="20pt">20pt</option>
+                    <option value="30pt">30pt</option>
+                    <option value="40pt">40pt</option>
+                </select>
+                <select name="fontType" id="fontType">
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Arial">Arial</option>
+                    <option value="Cursive">Cursive</option>
+                    <option value="Decorative">Decorative</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Courier">Courier</option>
+                    <option value="Monospace">Monospace</option>
+                    <option value="Comic Sans">Comic Sans</option>
+                    <option value="Calibri">Calibri</option>
+                    <option value="Sans-serif">Sans-serif</option>
+                    <option value="Serif">Serif</option>
+                </select>
+                <input type="button" value="Color" id="btnColor">
+                <input type="button" value="Background" id="btnBg">
+
+                <label>
+                    <input type="radio" name="a" value="left" id="txtLeft" checked>left</label>
+                <label>
+                    <input type="radio" name="a" value="center" id="txtCenter">center</label>
+                <label>
+                    <input type="radio" name="a" value="right" id="txtRight">right</label>
+            </form>
+        </div>
+
+<!-----------------------МЕНЮ ТАБЛИЦЬ І СПИСКІВ-------------------------->
+        <div id="editMenuBox">
+            <form name="editMenu">
+                <input type="button" value="Save" id="btnSave">
+                <input type="button" value="Create Table" id="btnTable">
+                <input type="button" value="Create List" id="btnList">
+            </form>
+        </div>
+    </div>
+
+
+    <div id="editDiv">
+<!----------------------------БЛОК З ТЕКСТОМ----------------------------->
+        <div id="editDivBox">
+            <p>Якийсь там текст в якому шось там буде</p>
+            <p>Якийсь там текст в якому шось там буде</p>
+            <p>Якийсь там текст в якому шось там буде</p>
+            <p>Якийсь там текст в якому шось там буде</p>
+            <p>Якийсь там текст в якому шось там буде</p>
+            <p>Якийсь там текст в якому шось там буде</p>
+        </div>
+
+<!---------------------TEXTAREA РЕДАГУВАННЯ ТЕКСТУ----------------------->
+        <div id="areaBox">
+            <textarea id="areaEdit"></textarea>
+        </div>
+    </div>
+
+<!---------------------БЛОК КОЛЬОРІВ ДЛЯ ТЕКСТУ І ФОНУ------------------->
+    <div id="table1Box">
+        <input type="button" id="btnClose" value="Close">
+        <input type="button" value="Bg image" id="btnBgImg">
+        <table id="table1">
+            <tr>
+                <td style="background:#1a9"></td>
+                <td style="background:#800"></td>
+                <td style="background:#3c7"></td>
+            </tr>
+            <tr>
+                <td style="background:#4e0"></td>
+                <td style="background:#888"></td>
+                <td style="background:#f00"></td>
+            </tr>
+            <tr>
+                <td style="background:#00f"></td>
+                <td style="background:#808"></td>
+                <td style="background:#880"></td>
+            </tr>
+        </table>
+    </div>
+
+<!---------------------БЛОК ЗОБРАЖЕНЬ ДЛЯ ФОНУ--------------------------->
+    <div id="table2Box">
+        <input type="button" value="Bg color" id="btnBgColor">
+        <input type="button" id="btnClose2" value="Close">
+        <table id="table2">
+            <tr>
+                <td style="background:url(img/1.jpg); background-size: cover"></td>
+                <td style="background:url(img/2.jpg); background-size: cover"></td>
+                <td style="background:url(img/3.jpg); background-size: cover"></td>
+            </tr>
+            <tr>
+                <td style="background:url(img/4.jpg); background-size: cover"></td>
+                <td style="background:url(img/5.jpg); background-size: cover"></td>
+                <td style="background:url(img/6.jpg); background-size: cover"></td>
+            </tr>
+            <tr>
+                <td style="background:url(img/7.jpg); background-size: cover"></td>
+                <td style="background:url(img/8.jpg); background-size: cover"></td>
+                <td style="background:url(img/9.jpg); background-size: cover"></td>
+            </tr>
+        </table>
+        <form enctype="multipart/form-data" method="post">
+            <label>Upload file:</label>
+            <input type="file" name="image" id="inputfile" accept="image/jpeg">
+        </form>
+    </div>
+
+<!--------------------------БЛОК СТВОРЕННЯ ТАБЛИЦЬ----------------------->
+    <div id="tableBox">
+        <input type="button" id="btnClose3" value="Close">
+        <form id="tableForm">
+            <p>
+                <label>К-сть рядків:
+                    <input type="text" id="trNum">
+                </label>
+                <label>К-сть стовпців:
+                    <input type="text" id="tdNum">
+                </label>
+            </p>
+            <p>
+                <label>Ширина:
+                    <input type="text" id="tableWidth">
+                </label>
+                <label>Висота:
+                    <input type="text" id="tableHeight">
+                </label>
+            </p>
+            <p>
+                <label>Cellspacing:
+                    <input type="text" id="cellspc">
+                </label>
+            </p>
+            <p>
+                <label>Товщина рамки:
+                    <input type="text" id="tableWeight">
+                </label>
+                <label>Колір рамки:
+                    <input type="text" id="borderColor">
+                </label>
+            </p>
+            <input type="reset" value="Скинути" id="btnReset1">
+            <input type="button" value="Створити" id="btnCreate1">
+        </form>
+    </div>
+
+<!--------------------------БЛОК СТВОРЕННЯ СПИСКІВ----------------------->
+    <div id="listBox">
+        <input type="button" id="btnClose4" value="Close">
+        <form id="listForm">
+            <p>
+                <label>Тип списку:
+                    <input type="radio" id="Ol" value="ol" checked>ol</label>
+            </p>
+            <p>
+                <label>Тип маркера:
+                    <select id="listOl">
+                        <option value="A">A</option>
+                        <option value="a">a</option>
+                        <option value="I">I</option>
+                        <option value="i">i</option>
+                        <option value="1">1</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label>К-сть Item:
+                    <input type="text" id="itemNum">
+                </label>
+            </p>
+            <input type="reset" value="Скинути" id="btnReset2">
+            <input type="button" value="Створити" id="btnCreate2">
+        </form>
+    </div>
+    
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/lvl3.js"></script>
+</body>
+
+</html>

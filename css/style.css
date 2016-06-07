@@ -1,0 +1,376 @@
+/*По замовчуванню*/
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    background-color: ghostwhite;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*----------------------Кнопки Close-----------------------*/
+
+#btnClose {
+    margin-left: 163px;
+    border: solid 1px #004F72;
+    border-radius: 4px;
+    font: 9px sans-serif;
+    color: #E5FFFF;
+    background-color: #3BA4C7;
+    transform: rotate(23deg);
+}
+
+#btnClose2 {
+    margin-left: 216px;
+    border: solid 1px #004F72;
+    border-radius: 4px;
+    font: 10px sans-serif;
+    color: #E5FFFF;
+    background-color: #3BA4C7;
+    transform: rotate(25deg);
+}
+
+#btnClose3 {
+    margin-left: 302px;
+    border: solid 1px #004F72;
+    border-radius: 4px;
+    font: 9px sans-serif;
+    color: #E5FFFF;
+    background-color: #3BA4C7;
+    transform: rotate(25deg);
+}
+
+#btnClose4 {
+    margin-left: 134px;
+    border: solid 1px #004F72;
+    border-radius: 4px;
+    font: 9px sans-serif;
+    color: #E5FFFF;
+    background-color: #3BA4C7;
+    transform: rotate(25deg);
+}
+
+
+/*-------------Стилі для розділу таблиць і списків---------*/
+
+#areaBox,
+#editMenuBox {
+    display: none;
+}
+
+#editMenuBox {
+    overflow-y: auto;
+}
+
+#areaBox {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*ТекстЕріа*/
+
+#areaEdit {
+    min-width: 100%;
+    min-height: 100%;
+    background-color: ghostwhite;
+    overflow-y: auto;
+    resize: none;
+}
+
+
+/*кнопки Save,Table,List*/
+
+#btnSave,
+#btnTable,
+#btnList {
+    width: 90px;
+    height: auto;
+    font-size: 13px;
+    background-color: silver;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+#btnSave {
+    margin-top: 40px;
+    margin-left: 40%;
+}
+
+
+/*---------------------Стилі головного меню----------------*/
+
+
+/*div головного меню*/
+
+#menuDiv {
+    width: 100%;
+    height: 100px;
+    background-image: url(../img/demo1.jpg);
+}
+
+
+/*кнопки головного меню*/
+
+#btnEdit,
+#btnB,
+#btnI,
+#btnU,
+#btnColor,
+#btnBg {
+    width: 90px;
+    height: auto;
+    font-size: 13px;
+    background-color: silver;
+    margin: 40px auto;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+#btnEdit {
+    margin-left: 15%;
+}
+
+#btnB {
+    font-weight: bold;
+}
+
+#btnI {
+    font-style: italic;
+}
+
+#btnU {
+    text-decoration: underline;
+}
+
+
+/*Вибір розміру і шрифта*/
+
+#fontType,
+#txtSize {
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: silver;
+}
+
+
+/*------------------Hover для всіх кнопок------------------*/
+
+#btnEdit:hover {
+    background-color: azure;
+}
+
+#btnB:hover {
+    background-color: azure;
+}
+
+#btnI:hover {
+    background-color: azure;
+}
+
+#btnU:hover {
+    background-color: azure;
+}
+
+#btnColor:hover {
+    background-color: azure;
+}
+
+#btnBg:hover {
+    background-color: azure;
+}
+
+#txtSize:hover {
+    background-color: azure;
+}
+
+#fontType:hover {
+    background-color: azure;
+}
+
+#btnSave:hover {
+    background-color: azure;
+}
+
+#btnTable:hover {
+    background-color: azure;
+}
+
+#btnList:hover {
+    background-color: azure;
+}
+
+#btnBgImg:hover {
+    background-color: azure;
+}
+
+#btnBgColor:hover {
+    background-color: azure;
+}
+
+#btnReset1:hover {
+    background-color: azure;
+}
+
+#btnCreate1:hover {
+    background-color: azure;
+}
+
+#btnReset2:hover {
+    background-color: azure;
+}
+
+#btnCreate2:hover {
+    background-color: azure;
+}
+
+
+/*--------------------Блок з текстом-----------------------*/
+
+#editDiv {
+    width: 100%;
+    height: 100%;
+}
+
+#editDivBox {
+    width: 100%;
+    height: 100%;
+    padding: 1px;
+    margin-left: -2px;
+}
+
+
+/*---------------------------------------------------------*/
+
+
+/*Таблиця кольорів*/
+
+#table1 {
+    width: 200px;
+    height: 200px;
+}
+
+
+/*Таблиця зображень*/
+
+#table2 {
+    width: 350px;
+    height: 200px;
+}
+
+#table1Box,
+#table2Box {
+    background-color: whitesmoke;
+    display: none;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin: -125px 0 0 -125px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+
+/*Кнопки вибору кольору і фону*/
+
+#btnBgImg,
+#btnBgColor {
+    width: 90px;
+    font-size: 15px;
+    background-color: silver;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+
+/*------------------Таблиці і списки-----------------------*/
+
+
+/*Box для таблиць*/
+
+#tableBox {
+    background-color: whitesmoke;
+    position: absolute;
+    top: 45%;
+    left: 47%;
+    margin: -125px 0 0 -125px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: none;
+}
+
+#tableBox>p {
+    margin: 5px;
+}
+
+#tableForm {
+    text-align: left;
+    padding: 3px;
+}
+
+#btnReset1,
+#btnCreate1 {
+    font-size: 15px;
+    background-color: silver;
+    border: 1px solid black;
+    margin: 3px 44px;
+}
+
+
+/*--------------------------------------------------------*/
+
+
+/*Box для списків*/
+
+#listBox {
+    background-color: whitesmoke;
+    position: absolute;
+    top: 45%;
+    left: 54%;
+    margin: -125px 0 0 -125px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: none;
+}
+
+#listForm {
+    padding: 3px;
+}
+
+#btnReset2,
+#btnCreate2 {
+    font-size: 15px;
+    background-color: silver;
+    border: 1px solid black;
+    margin: 3px;
+}
+
+
+/*------------------Вирівнювання інпутів в таблиці---------*/
+
+#cellspc {
+    margin-left: 30px;
+}
+
+#tableWidth {
+    margin-left: 48px;
+}
+
+#tableHeight {
+    margin-left: 52px;
+}
+
+#trNum {
+    margin-left: 21px;
+}
+
+#borderColor {
+    margin-left: 15px;
+}
+
+input[type='text'] {
+    width: 50px;
+}
